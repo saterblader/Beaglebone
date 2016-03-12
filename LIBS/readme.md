@@ -12,13 +12,13 @@ March 12th, 2016
 
 Classes Included
 -----------------
-GPIO v1.0 
-LEDS v1.0 
-I2C v1.0 
-UART v1.0 
+GPIO v1.0  
+LEDS v1.0  
+I2C v1.0  
+UART v1.0  
 
 Work In Progress
 ----------------
-AIN 
-SPI 
-PWM 
+AIN  
+SPI  
+PWM  
