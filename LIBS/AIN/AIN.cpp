@@ -36,7 +36,7 @@ AIN::~AIN()
 int main()
 {
 	AIN AIN1(1);
-	std::cout<<"The current value of AIN1 is "<<AIN1.GET()<<std::endl;
+	std::cout<<"The current value of AIN1 is "<<AIN1.Get()<<std::endl;
 	return 0;
 }
 #endif
