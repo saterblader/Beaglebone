@@ -29,7 +29,7 @@ int AIN::Get()
 AIN::~AIN()
 {
 	_pin = -1;
-	_path="\0";
+	_path[0]='\0';
 }
 
 #ifdef TEST_AIN

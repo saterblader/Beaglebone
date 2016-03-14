@@ -9,7 +9,7 @@ The following code provides a Beaglebone I2C Class.
 Release 1.0  
 Feb. 29th, 2016
 
-Based on Code Written by Derek Malloy
+Based on Code Written by Derek Molloy
 
 Public Functions:
 -----------------

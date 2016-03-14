@@ -6,8 +6,13 @@ By Philip D. Geramian
 
 The following code provides a Beaglebone AIN Class.
 
-Release 1.0  
-March 12, 2016
+Release 1.1  
+March 13, 2016
+
+Changes
+-------
+v1.1  
+-Fixed destructor syntax error  
 
 Public Functions:
 -----------------
