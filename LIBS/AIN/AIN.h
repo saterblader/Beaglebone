@@ -5,11 +5,12 @@
 class AIN
 {
 	public:
-		AIN(int pin);
+		AIN(int sysFS, int pin);
 		int Get();
 		~AIN();
 	private:
 		int _pin;
+		int _sysFS;
 		char _path[50];
 };
 #endif

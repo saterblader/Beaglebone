@@ -2,13 +2,20 @@
 #include <fstream>
 #include <string>
 #include <iostream>
+#include <cstdlib>
 
-AIN::AIN(int pin)
+AIN::AIN(int sysFS, int pin)
 {
 	if (pin >=0 || pin <7)
 	{
 		_pin=pin;
-		sprintf(_path,"/sys/devices/ocp.3/helper.12/AIN%d",_pin);
+		_sysFS=sysFS
+		sprintf(_path,"/sys/devices/ocp.3/helper.%d/AIN%d",_sysFS,_pin);
+	}
+	else
+	{
+		std::cout<< "Invalid Pin\n";
+		exit(1);
 	}
 }
 
@@ -29,13 +36,20 @@ int AIN::Get()
 AIN::~AIN()
 {
 	_pin = -1;
-	_path[0]='\0';
+	_sysFS = -1;
+	_path[0] = '\0';
 }
 
 #ifdef TEST_AIN
-int main()
+int main(int argc, char *argv[])
 {
-	AIN AIN1(1);
+	if (argc < 2)
+	{
+		std:: cout<<"invalid number of arguments\n";
+		return 0;
+	}
+	int sysFS= std::stoi (argv[1],nullptr,10);
+	AIN AIN1(sysFS,1);
 	std::cout<<"The current value of AIN1 is "<<AIN1.Get()<<std::endl;
 	return 0;
 }

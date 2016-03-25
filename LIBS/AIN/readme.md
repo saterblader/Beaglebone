@@ -6,22 +6,27 @@ By Philip D. Geramian
 
 The following code provides a Beaglebone AIN Class.
 
-Release 1.1  
-March 13, 2016
+Release 1.2  
+March 25, 2016
 
 Changes
 -------
+v1.2  
+-Fixed constructor to allow for sysFS file number
+
 v1.1  
 -Fixed destructor syntax error  
 
 Public Functions:
 -----------------
 
-###AIN(int pin)
+###AIN(int sysFS, int pin)
 This Constructor should be used at all times.
 This checks to make sure the passed value is a 
 valid number (between 0 and 7), and sets the required 
-private member data.
+private member data. sysFS is the number that comes 
+after "../helper." As an example "../helper.12" sysFS 
+would equal 12.
 
 ###int Get()
 This member function gets the current value of the AIN
@@ -42,4 +47,4 @@ function to test functionality. It makes use of AIN 1
 The macro is named "TEST_AIN". To use this main while 
 compiling with GCC the following command can be used:
 
-```g++ -D TEST_AIN AIN.cpp -o AIN_TEST```
+```g++ -D TEST_AIN -std=c++11 AIN.cpp -o AIN_TEST```
