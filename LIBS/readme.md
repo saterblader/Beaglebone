@@ -8,7 +8,7 @@ The following folders provide classes for different
 Beaglebone functionality
 
 Release 1.0  
-March 12th, 2016
+March 25th, 2016
 
 Classes Included
 -----------------
