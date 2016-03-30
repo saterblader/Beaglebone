@@ -7,7 +7,7 @@ class UART
 	public:
 		UART(){}
 		UART(int tty);
-		bool opendev(int baudRate);
+		bool opendev(int baudRate, bool echo);
 		bool writemsg(const char* message);
 		std::string readmsg(int numChar);
 		bool closedev();

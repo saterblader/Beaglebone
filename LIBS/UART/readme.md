@@ -6,8 +6,8 @@ By Philip D. Geramian
 
 The following code provides a Beaglebone UART Class.
 
-Release 1.0  
-Feb. 29th, 2016
+Release 1.1  
+March 30th, 2016
 
 Public Functions:
 -----------------
@@ -22,10 +22,11 @@ as such: TTYO* where * equals the number you pass to
 this function. This constructor does not open the 
 device.
 
-###bool opendev(int baudRate)
+###bool opendev(int baudRate, bool echo)
 This member function opens the selected TTY device.
 You may pass a standart baud rate as the parameter as
-no baud rate is selected by default.It will return 
+no baud rate is selected by default. Also you must 
+specify if you want the UART to echo. It will return 
 TRUE if successful, and FALSE if unsuccessful. 
 Additionally it will print out an error message if 
 unsuccessful. 

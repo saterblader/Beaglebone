@@ -6,16 +6,15 @@ By Philip D. Geramian
 
 The following folders provide classes for different 
 Beaglebone functionality
-
-Release 1.0  
-March 25th, 2016
+  
+March 30th, 2016
 
 Classes Included
 -----------------
 GPIO v1.0  
 LEDS v1.0  
 I2C v1.0  
-UART v1.0  
+UART v1.1  
 AIN v1.2  
 SPI v1.0  
 

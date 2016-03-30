@@ -21,7 +21,7 @@ UART::UART(int tty)
 	else
 		_tty=tty;
 }
-bool UART::opendev(int baudRate)
+bool UART::opendev(int baudRate, bool echo)
 {
 	char path[50];
 	sprintf(path, "/dev/ttyO%d",_tty);
@@ -48,6 +48,8 @@ bool UART::opendev(int baudRate)
 		}
 	}
 	options.c_cflag = SelectedBaud[BaudIndex] | CS8 | CREAD | CLOCAL;
+	if (echo=FALSE)
+		options.c_lflag=0;
 	options.c_iflag = IGNPAR | ICRNL;
 	tcflush(_file, TCIFLUSH);
 	tcsetattr(_file, TCSANOW, &options);
