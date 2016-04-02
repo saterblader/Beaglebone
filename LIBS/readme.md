@@ -16,7 +16,7 @@ LEDS v1.0
 I2C v1.0  
 UART v1.1  
 AIN v1.2  
-SPI v1.0
+SPI v1.0  
 PWM v1.0    
 
 Work In Progress
