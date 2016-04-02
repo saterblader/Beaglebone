@@ -99,7 +99,7 @@ UART::~UART()
 int main()
 {
 	UART tty01(1);
-	tty01.opendev(9600);
+	tty01.opendev(9600, TRUE);
 	tty01.writemsg("Hello World!");
 	std::string mesg;
 	while ((mesg=tty01.readmsg(13))=="\0"){}

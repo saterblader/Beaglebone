@@ -9,6 +9,13 @@ The following code provides a Beaglebone UART Class.
 Release 1.1  
 March 30th, 2016
 
+Changes
+--------
+v1.1  
+-Added the option to disable echo from the Beaglebone 
+in the ``opendev()`` function.  
+-Updated the test main to make use of this feature.
+
 Public Functions:
 -----------------
 ###UART()
