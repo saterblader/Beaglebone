@@ -7,7 +7,7 @@ By Philip D. Geramian
 The following folders provide classes for different 
 Beaglebone functionality
   
-January 6th, 2016
+January 6th, 2017
 
 Classes Included
 -----------------
