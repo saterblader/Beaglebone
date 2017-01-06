@@ -6,8 +6,8 @@ By Philip D. Geramian
 
 The following code provides a Beaglebone SPI Class.
 
-Release 1.0  
-March 13th, 2016
+Release 1.1  
+January 6th, 2017
 
 Based on Code Written by Derek Molloy
 

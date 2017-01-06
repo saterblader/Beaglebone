@@ -7,7 +7,7 @@ By Philip D. Geramian
 The following folders provide classes for different 
 Beaglebone functionality
   
-March 30th, 2016
+January 6th, 2016
 
 Classes Included
 -----------------
@@ -16,9 +16,10 @@ LEDS v1.0
 I2C v1.0  
 UART v1.1  
 AIN v1.2  
-SPI v1.0  
+SPI v1.1  
 PWM v1.0    
 
 Work In Progress
 ----------------
-None at the moment  
+Fixing PWM and AIN for Linux 4.4.x and adding test 
+stubs to I2C and SPI
